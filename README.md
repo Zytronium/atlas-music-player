@@ -11,10 +11,34 @@
 - `src`: All javascript/jsx code goes in this directory
 - `src/assets`: Any static assets such as images that are loaded through the javascript files goes here.
 - `index.html`: This is the html file that appears when the dev server starts up.
-- `src/app.jsx`: The is the main app component for the entire app.
+- `src/app.jsx`: This is the main app component for the entire app.
 
 ### Important Commands
 
-- `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatocally be reflected in the browser
+- `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatically be reflected in the browser
 - `npm run lint`: Run the lint checker with eslint to check for known linting issues
 - `npm run build`: Outputs the production files into the `dist` folder
+
+
+---
+
+### ✅ Tasks checklist:
+- [X] ​0. Getting Started (0/0 pts)
+- [ ] ​1. Setup Tailwind (0/5 pts)
+- [ ] ​2. Basic Components (0/25 pts)
+- [ ] ​3. Larger Components (0/10 pts)
+- [ ] ​4. Music Player (0/15 pts)
+- [ ] ​5. Custom Theme (0/15 pts)
+- [ ] ​6. Dark Mode (0/15 pts)
+- [ ] ​7. Loading Skeleton (0/15 pts)
+
+
+- [ ] **Everything Done ✓** (0/100 pts) - 0%
+
+>### Progress Goals:
+><strong>Friday: 30% (task 2)</strong>  
+<em style="color: gray">Saturday/Sunday: 55% (task 4)</em>  
+<em style="color: gray">Monday: 85% (task 6)</em>  
+<em style="color: gray">Tuesday: 100% (task 7)</em>
+
+---
