@@ -2,12 +2,12 @@ import { Play, Pause, FastForward, Rewind, Repeat } from "lucide-react";
 
 export default function PlayControls() {
   return (
-    <div className="flex flex-row justify-between w-full">
+    <div className="flex flex-row justify-between w-full mt-2">
       <button className="flex h-12 w-12 items-center justify-center">
         <span className="text-lg text-slate-800">1x</span>
       </button>
       <button className="flex h-12 w-12 items-center justify-center">
-        <Rewind className="fill-black text-transparent" />
+        <Rewind className="fill-gray-500 text-transparent" />
       </button>
       <button className="flex h-12 w-12 items-center justify-center rounded border-black outline-3">
         <Play className="fill-black text-transparent" />

@@ -26,14 +26,14 @@
 - [X] ​0. Getting Started (0/0 pts)
 - [X] ​1. Setup Tailwind (5/5 pts)
 - [ ] ​2. Basic Components (24/25 pts) <small>(Still needs polishing)</small>
-- [ ] ​3. Larger Components (0/10 pts)
+- [ ] ​3. Larger Components (9/10 pts) <small>(Still needs polishing)</small>
 - [ ] ​4. Music Player (0/15 pts)
 - [ ] ​5. Custom Theme (0/15 pts)
 - [ ] ​6. Dark Mode (0/15 pts)
 - [ ] ​7. Loading Skeleton (0/15 pts)
 
 
-- [ ] **Everything Done ✓** (29/100 pts) - 29%
+- [ ] **Everything Done ✓** (48/100 pts) - 48%
 
 >### Progress Goals:
 ><strong>Friday: 30% ✓(task 2)</strong>  
