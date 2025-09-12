@@ -24,7 +24,7 @@
 
 ### ✅ Tasks checklist:
 - [X] ​0. Getting Started (0/0 pts)
-- [ ] ​1. Setup Tailwind (0/5 pts)
+- [X] ​1. Setup Tailwind (5/5 pts)
 - [ ] ​2. Basic Components (0/25 pts)
 - [ ] ​3. Larger Components (0/10 pts)
 - [ ] ​4. Music Player (0/15 pts)
@@ -33,7 +33,7 @@
 - [ ] ​7. Loading Skeleton (0/15 pts)
 
 
-- [ ] **Everything Done ✓** (0/100 pts) - 0%
+- [ ] **Everything Done ✓** (5/100 pts) - 5%
 
 >### Progress Goals:
 ><strong>Friday: 30% (task 2)</strong>  
