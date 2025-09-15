@@ -29,16 +29,16 @@
 - [X] ​3. Larger Components (10/10 pts)
 - [X] ​4. Music Player (15/15 pts)
 - [X] ​5. Custom Theme (15/15 pts)
-- [ ] ​6. Dark Mode (0/15 pts)
+- [X] ​6. Dark Mode (15/15 pts)
 - [ ] ​7. Loading Skeleton (0/15 pts)
 
 
-- [ ] **Everything Done ✓** (70/100 pts) - 70%
+- [ ] **Everything Done ✓** (85/100 pts) - 85%
 
 >### Progress Goals:
 ><strong>Friday: 30% ✓(task 2)</strong>  
 <em style="color: gray">Saturday/Sunday: 55% (task 4)</em>  
-<em style="color: gray">Monday: 85% (task 6)</em>  
+<em style="color: gray">Monday: 85% ✓(task 6)</em>  
 <em style="color: gray">Tuesday: 100% (task 7)</em>
 
 ---

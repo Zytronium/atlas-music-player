@@ -7,7 +7,7 @@ export default function SongTitle(props) {
         {props.title}
       </h2>
       <p
-        className={`text-muted ${props.size === "small" ? "text-sm font-[500]" : "mb-4"} text-left`}
+        className={`dark:text-dark-muted text-muted ${props.size === "small" ? "text-sm font-[500]" : "mb-4"} text-left`}
       >
         {props.artist}
       </p>
