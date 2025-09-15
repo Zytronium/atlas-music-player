@@ -4,7 +4,7 @@ import PlayControls from "./PlayControls.jsx";
 import VolumeControls from "./VolumeControls.jsx";
 
 export default function CurrentlyPlaying() {
-  return <div className="flex flex-col w-[50%] mx-2 ">
+  return <div className="flex flex-col w-[50%] p-6 ">
     <CoverArt />
     <SongTitle title={"Painted in Blue"} artist={"Soul Canvas"} />
     <PlayControls />

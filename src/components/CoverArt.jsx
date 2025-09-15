@@ -6,7 +6,7 @@ export default function CoverArt() {
       src={Placeholder}
       alt="Album cover"
       height="400"
-      className="aspect-square object-cover mb-6 rounded-lg"
+      className="aspect-square object-cover mb-6 rounded-md"
     />
   );
 }
