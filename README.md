@@ -25,15 +25,15 @@
 ### ✅ Tasks checklist:
 - [X] ​0. Getting Started (0/0 pts)
 - [X] ​1. Setup Tailwind (5/5 pts)
-- [ ] ​2. Basic Components (24/25 pts) <small>(Still needs polishing)</small>
-- [ ] ​3. Larger Components (9/10 pts) <small>(Still needs polishing)</small>
-- [ ] ​4. Music Player (0/15 pts)
+- [X] ​2. Basic Components (25/25 pts)
+- [X] ​3. Larger Components (10/10 pts)
+- [ ] ​4. Music Player (5/15 pts)
 - [ ] ​5. Custom Theme (0/15 pts)
 - [ ] ​6. Dark Mode (0/15 pts)
 - [ ] ​7. Loading Skeleton (0/15 pts)
 
 
-- [ ] **Everything Done ✓** (38/100 pts) - 38%
+- [ ] **Everything Done ✓** (45/100 pts) - 45%
 
 >### Progress Goals:
 ><strong>Friday: 30% ✓(task 2)</strong>  

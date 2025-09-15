@@ -1,10 +1,21 @@
 import PlayListItem from "./PlayListItem.jsx";
 
 export default function Playlist() {
-  return <div className="flex flex-col w-[50%] p-4">
-    <PlayListItem title={"Title"} artist={"artist"} duration={"5:54"}
-                  active={true} />
-    <PlayListItem title={"Title"} artist={"artist"} duration={"5:54"} />
-    <PlayListItem title={"Title"} artist={"artist"} duration={"5:54"} />
-  </div>;
+  return (
+    <div className="flex flex-col w-[50%] p-6">
+      <h3 className='font-bold text-lg'>Playlist</h3>
+      <div className="flex flex-col w-full mt-4 gap-1">
+        <PlayListItem title={"Painted in Blue"} artist={"Soul Canvas"} duration={"5:55"}
+                      active={true} />
+        <PlayListItem title={"Tidal Drift"} artist={"Echoes of the Sea"} duration={"8:02"} />
+        <PlayListItem title={"Fading Shadows"} artist={"The Emberlight"} duration={"3:01"} />
+        <PlayListItem title={"Cosmic Drift"} artist={"Solar Flare"} duration={"5:01"} />
+        <PlayListItem title={"Urban Serenade"} artist={"Midnight Groove"} duration={"4:54"} />
+        <PlayListItem title={"Whispers in the Wind"} artist={"Rust & Ruin"} duration={"6:13"} />
+        <PlayListItem title={"Electric Fever"} artist={"Neon Jungle"} duration={"8:41"} />
+        <PlayListItem title={"Edge of the Abyss"} artist={"Neon Jungle"} duration={"2:27"} />
+        <PlayListItem title={"Golden Haze"} artist={"Velvet Waves"} duration={"3:14159265358979323846264338"} />
+      </div>
+    </div>
+  );
 }
