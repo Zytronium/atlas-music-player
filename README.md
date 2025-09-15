@@ -33,7 +33,7 @@
 - [ ] ​7. Loading Skeleton (0/15 pts)
 
 
-- [ ] **Everything Done ✓** (48/100 pts) - 48%
+- [ ] **Everything Done ✓** (38/100 pts) - 38%
 
 >### Progress Goals:
 ><strong>Friday: 30% ✓(task 2)</strong>  
