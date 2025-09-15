@@ -2,7 +2,7 @@ import PlayListItem from "./PlayListItem.jsx";
 
 export default function Playlist() {
   return (
-    <div className="flex w-full flex-col border-t-[1px] border-slate-200 p-6 md:w-[50%] md:border-t-0 md:border-l-[1px]">
+    <div className="border-tertiary flex w-full flex-col border-t-[1px] p-6 md:w-[50%] md:border-t-0 md:border-l-[1px]">
       <h3 className="text-lg font-semibold">Playlist</h3>
       <div className="mt-4 flex w-full flex-col gap-1 pr-4">
         <PlayListItem

@@ -28,12 +28,12 @@
 - [X] ​2. Basic Components (25/25 pts)
 - [X] ​3. Larger Components (10/10 pts)
 - [X] ​4. Music Player (15/15 pts)
-- [ ] ​5. Custom Theme (0/15 pts)
+- [X] ​5. Custom Theme (15/15 pts)
 - [ ] ​6. Dark Mode (0/15 pts)
 - [ ] ​7. Loading Skeleton (0/15 pts)
 
 
-- [ ] **Everything Done ✓** (55/100 pts) - 55%
+- [ ] **Everything Done ✓** (70/100 pts) - 70%
 
 >### Progress Goals:
 ><strong>Friday: 30% ✓(task 2)</strong>  
