@@ -1,11 +1,19 @@
 import PlayListItem from "./PlayListItem";
 import { JSX } from "react";
+import { PlaylistSong, Song } from "@/types.ts";
 
-export default function Playlist(): JSX.Element {
+type Props = {
+  playlist: PlaylistSong[] | null;
+  song: Song | null;
+  lyrics?: string;
+};
+
+export default function Playlist(props: Props): JSX.Element {
   return (
     <div className="border-tertiary flex w-full flex-col border-t-[1px] p-6 md:w-[50%] md:border-t-0 md:border-l-[1px]">
       <h3 className="text-lg font-semibold">Playlist</h3>
       <div className="mt-4 flex w-full flex-col gap-1 pr-4">
+        {props.playlist ? null : null}
         <PlayListItem
           title={"Painted in Blue"}
           artist={"Soul Canvas"}

@@ -4,6 +4,7 @@ import { JSX } from "react";
 type Props = {
   src?: string;
   alt?: string;
+  lyrics?: string | null;
 };
 
 export default function CoverArt(props: Props): JSX.Element {
