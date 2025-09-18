@@ -1,4 +1,12 @@
-export default function SongTitle(props) {
+import { JSX } from "react";
+
+type Props = {
+  title: string;
+  artist: string;
+  size?: "small" | "large";
+};
+
+export default function SongTitle(props: Props): JSX.Element {
   return (
     <div className="flex flex-col">
       <h2

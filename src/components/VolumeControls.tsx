@@ -1,6 +1,11 @@
 import { Volume2 } from "lucide-react";
+import { JSX } from "react";
 
-export default function VolumeControls(props) {
+type Props = {
+  loading?: boolean;
+};
+
+export default function VolumeControls(props: Props): JSX.Element {
   return (
     <div className="mb-1 flex flex-row">
       <Volume2

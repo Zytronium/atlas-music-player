@@ -1,6 +1,11 @@
 import { Play, /*Pause,*/ FastForward, Rewind, Repeat } from "lucide-react";
+import { JSX } from "react";
 
-export default function PlayControls(props) {
+type Props = {
+  loading?: boolean;
+};
+
+export default function PlayControls(props: Props): JSX.Element {
   return (
     <div className="mb-4 flex w-full flex-row items-center justify-between">
       <button

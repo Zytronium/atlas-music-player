@@ -1,6 +1,7 @@
-import PlayListItem from "./PlayListItem.jsx";
+import PlayListItem from "./PlayListItem";
+import { JSX } from "react";
 
-export default function Playlist() {
+export default function Playlist(): JSX.Element {
   return (
     <div className="border-tertiary flex w-full flex-col border-t-[1px] p-6 md:w-[50%] md:border-t-0 md:border-l-[1px]">
       <h3 className="text-lg font-semibold">Playlist</h3>

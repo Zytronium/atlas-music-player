@@ -11,7 +11,7 @@
 - `src`: All javascript/jsx code goes in this directory
 - `src/assets`: Any static assets such as images that are loaded through the javascript files goes here.
 - `index.html`: This is the html file that appears when the dev server starts up.
-- `src/app.jsx`: This is the main app component for the entire app.
+- `src/app.tsx`: This is the main app component for the entire app.
 
 ### Important Commands
 
@@ -22,7 +22,9 @@
 
 ---
 
-### ✅ Tasks checklist:
+## ✅ Tasks checklists:
+
+### React Styling
 - [X] ​0. Getting Started (0/0 pts)
 - [X] ​1. Setup Tailwind (5/5 pts)
 - [X] ​2. Basic Components (25/25 pts)
@@ -33,12 +35,28 @@
 - [X] ​7. Loading Skeleton (15/15 pts)
 
 
-- [X] **Everything Done ✓** (100/100 pts) - 100%
+- [X] **Project 1 Done ✓** (100/100 pts) - 100%
 
 >### Progress Goals:
 ><strong>Friday: 30% ✓(task 2)</strong>  
 <strong>Saturday/Sunday: 55% x(task 4)</strong>  
 <strong>Monday: 85% ✓(task 6)</strong>  
 <strong>Tuesday: 100% ✓(task 7)</strong>
+
+
+### Typescript Introduction
+- [X] ​0. Getting Started (0/0 pts)
+- [ ] ​1. Currently Playing (1/45 pts)
+- [ ] ​2. Playlist (0/20 pts)
+- [ ] ​3. Audio Player (0/25 pts)
+- [ ] ​4. Deploy Application (0/10 pts)
+
+
+- [ ] **Project 2 Done ✓** (1/100 pts) - 1%
+
+>### Progress Goals:
+><strong>Thursday: 10% (task 0)</strong>  
+<em style="color: gray">Saturday/Sunday: 45% (task 1)</em>  
+<em style="color: gray">Monday: 100% (task 4)</em>  
 
 ---
