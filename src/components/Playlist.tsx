@@ -1,6 +1,6 @@
 import PlayListItem from "./PlayListItem";
 import { JSX } from "react";
-import { PlaylistSong, Song } from "@/types.ts";
+import { PlaylistSong, Song } from "../types.ts";
 
 type Props = {
   playlist: PlaylistSong[] | null;

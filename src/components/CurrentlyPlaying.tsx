@@ -3,7 +3,7 @@ import SongTitle from "./SongTitle";
 import PlayControls from "./PlayControls";
 import VolumeControls from "./VolumeControls";
 import { JSX } from "react";
-import { PlaylistSong, Song } from "@/types.ts";
+import { PlaylistSong, Song } from "../types.ts";
 
 type Props = {
   playlist: PlaylistSong[] | null;
@@ -14,10 +14,12 @@ type Props = {
 export default function CurrentlyPlaying(props: Props): JSX.Element {
   return (
     <div className="flex w-full flex-col p-6 md:w-[50%]">
-      <CoverArt src={props.song!.cover} lyrics={props.lyrics} />
-      {/*todo: set alt using song title*/}
-      <SongTitle title="Painted in Blue" artist="Soul Canvas" />
-      {/*todo: get title and artist for current song*/}
+      <CoverArt
+        src={props.song!.cover}
+        alt={props.song!.title}
+        lyrics={props.lyrics}
+      />
+      <SongTitle title={props.song!.title} artist={props.song!.artist} />
       <PlayControls />
       <VolumeControls />
     </div>
