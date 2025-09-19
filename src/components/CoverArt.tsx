@@ -13,7 +13,7 @@ export default function CoverArt(props: Props): JSX.Element {
       src={props.src ?? Placeholder}
       alt={props.alt ?? "Album cover"}
       height="400"
-      className="mb-6 aspect-square rounded-md object-cover"
+      className="mb-6 aspect-square rounded-md bg-slate-500 object-cover"
     />
   );
 }

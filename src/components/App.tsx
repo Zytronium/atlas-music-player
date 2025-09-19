@@ -10,6 +10,8 @@ function App(): JSX.Element {
   const [playlist, setPlaylist] = useState<PlaylistSong[] | null>(null);
   const [currentSong, setCurrentSong] = useState<Song | null>(null);
   const [lyrics, setLyrics] = useState<Lyrics | null>(null);
+  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
+  const [paused, setPaused] = useState<boolean>(false);
 
   useEffect(() => {
     (async () => {
@@ -47,6 +49,10 @@ function App(): JSX.Element {
           playlist={playlist!}
           song={currentSong!}
           lyrics={lyrics!.lyrics}
+          playbackSpeed={playbackSpeed}
+          setPlaybackSpeed={setPlaybackSpeed}
+          paused={paused}
+          setPaused={setPaused}
         />
       )}
       <Footer />

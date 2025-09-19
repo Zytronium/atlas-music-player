@@ -7,6 +7,10 @@ type Props = {
   playlist: PlaylistSong[] | null;
   song: Song | null;
   lyrics: string;
+  playbackSpeed: number;
+  setPlaybackSpeed: (speed: number) => void;
+  paused: boolean;
+  setPaused: (speed: boolean) => void;
 };
 
 export default function MusicPlayer(props: Props): JSX.Element {

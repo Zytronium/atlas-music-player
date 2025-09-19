@@ -9,6 +9,10 @@ type Props = {
   playlist: PlaylistSong[] | null;
   song: Song | null;
   lyrics?: string;
+  playbackSpeed: number;
+  setPlaybackSpeed: (speed: number) => void;
+  paused: boolean;
+  setPaused: (speed: boolean) => void;
 };
 
 export default function CurrentlyPlaying(props: Props): JSX.Element {
@@ -20,7 +24,7 @@ export default function CurrentlyPlaying(props: Props): JSX.Element {
         lyrics={props.lyrics}
       />
       <SongTitle title={props.song!.title} artist={props.song!.artist} />
-      <PlayControls />
+      <PlayControls {...props} />
       <VolumeControls />
     </div>
   );

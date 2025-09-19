@@ -46,13 +46,13 @@
 
 ### Typescript Introduction
 - [X] ​0. Getting Started (0/0 pts)
-- [ ] ​1. Currently Playing (10/45 pts)
+- [ ] ​1. Currently Playing (20/45 pts)
 - [ ] ​2. Playlist (0/20 pts)
 - [ ] ​3. Audio Player (0/25 pts)
 - [ ] ​4. Deploy Application (0/10 pts)
 
 
-- [ ] **Project 2 Done ✓** (10/100 pts) - 10%
+- [ ] **Project 2 Done ✓** (20/100 pts) - 20%
 
 >### Progress Goals:
 ><strong>Thursday: 10% ✓(task 0)</strong>  
