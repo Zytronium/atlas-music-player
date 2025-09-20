@@ -22,13 +22,15 @@ export interface MasterProp {
   song: Song | null;
   lyrics?: string;
   playbackSpeed: number;
-  setPlaybackSpeed: (speed: number) => void;
+  setPlaybackSpeed: (s: number) => void;
+  volume: number;
+  setVolume: (v: number) => void;  // V.irtual
   paused: boolean;
-  setPaused: (speed: boolean) => void;
+  setPaused: (p: boolean) => void;  // P.rivate
   shuffled: boolean;
-  setShuffled: (speed: boolean) => void;
+  setShuffled: (s: boolean) => void; // S.erver
   goPrev: () => Promise<void>;
-  goNext: () => Promise<void>;
+  goNext: () => Promise<void>;        // ?
   songIndex: number;
   playlistLength: number;
 }

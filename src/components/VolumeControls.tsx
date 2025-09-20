@@ -3,6 +3,7 @@ import { JSX } from "react";
 
 type Props = {
   loading?: boolean;
+  setVolume?: (v: number) => void;
 };
 
 export default function VolumeControls(props: Props): JSX.Element {
@@ -13,9 +14,10 @@ export default function VolumeControls(props: Props): JSX.Element {
       />
       <input
         type="range"
-        defaultValue={75}
+        defaultValue={50}
         readOnly={props.loading}
         className={`${props.loading ? "pointer-events-none opacity-50" : ""} accent-primary ml-2 w-full`}
+        onChange={(input) => props.setVolume!(parseInt(input.target.value) / 100)}
       />
     </div>
   );

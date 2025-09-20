@@ -15,7 +15,7 @@ export default function CurrentlyPlaying(props: MasterProp): JSX.Element {
       />
       <SongTitle title={props.song!.title} artist={props.song!.artist} />
       <PlayControls {...props} />
-      <VolumeControls />
+      <VolumeControls setVolume={props.setVolume} />
     </div>
   );
 }

@@ -14,6 +14,7 @@ function App(): JSX.Element {
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
   const [paused, setPaused] = useState<boolean>(true);
   const [shuffled, setShuffled] = useState<boolean>(false);
+  const [volume, setVolume] = useState<number>(0.5);
 
   useEffect(() => {
     (async () => {
@@ -85,6 +86,8 @@ function App(): JSX.Element {
           setPaused={setPaused}
           shuffled={shuffled}
           setShuffled={setShuffled}
+          volume={volume}
+          setVolume={setVolume}
         />
       )}
       <Footer />
