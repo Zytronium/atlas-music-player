@@ -18,7 +18,7 @@ export default function Playlist(props: Props): JSX.Element {
         <PlayListItem
           title={"Painted in Blue"}
           artist={"Soul Canvas"}
-          duration={"5:55"}
+          duration={355}
           active={true}
         />
         <PlayListItem
