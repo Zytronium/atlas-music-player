@@ -6,6 +6,7 @@ type Props = {
   playlist: PlaylistSong[] | null;
   song: Song | null;
   lyrics?: string;
+  songIndex: number;
 };
 
 export default function Playlist(props: Props): JSX.Element {

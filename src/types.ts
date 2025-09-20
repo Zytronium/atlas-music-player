@@ -9,6 +9,7 @@ export interface PlaylistSong {
 export interface Song extends PlaylistSong {
   cover: string;
   song: string;
+  index: number;
 }
 
 export interface Lyrics {

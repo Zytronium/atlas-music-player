@@ -13,6 +13,12 @@ type Props = {
   setPlaybackSpeed: (speed: number) => void;
   paused: boolean;
   setPaused: (speed: boolean) => void;
+  shuffled: boolean;
+  setShuffled: (speed: boolean) => void;
+  goPrev: () => Promise<void>;
+  goNext: () => Promise<void>;
+  songIndex: number;
+  playlistLength: number;
 };
 
 export default function CurrentlyPlaying(props: Props): JSX.Element {
