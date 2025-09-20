@@ -24,13 +24,14 @@ export interface MasterProp {
   playbackSpeed: number;
   setPlaybackSpeed: (s: number) => void;
   volume: number;
-  setVolume: (v: number) => void;  // V.irtual
+  setVolume: (v: number) => void; // V.irtual
   paused: boolean;
-  setPaused: (p: boolean) => void;  // P.rivate
+  setPaused: (p: boolean) => void; // P.rivate
   shuffled: boolean;
   setShuffled: (s: boolean) => void; // S.erver
   goPrev: () => Promise<void>;
-  goNext: () => Promise<void>;        // ?
+  goNext: () => Promise<void>; // ?
   songIndex: number;
+  goToSong: (index: number) => void;
   playlistLength: number;
 }

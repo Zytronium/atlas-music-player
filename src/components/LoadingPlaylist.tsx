@@ -20,7 +20,7 @@ export default function LoadingPlaylist(): JSX.Element {
     <div className="border-tertiary flex w-full flex-col border-t-[1px] p-6 md:w-[50%] md:border-t-0 md:border-l-[1px]">
       <h3 className="text-lg font-semibold">Playlist</h3>
       <div className="mt-4 flex w-full flex-col gap-1 pr-4">
-        {Array.from({ length: 10 }).map((_, i) => (
+        {Array.from({ length: 11 }).map((_, i) => (
           <LoadingPlayListItem key={i} />
         ))}
       </div>

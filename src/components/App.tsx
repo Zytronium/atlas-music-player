@@ -63,7 +63,13 @@ function App(): JSX.Element {
     if (!shuffled && songIndex < playlist.length - 1) {
       await goToSong(songIndex + 1);
     } else {
-      if (shuffled) await goToSong(Math.floor(Math.random() * playlist.length));
+      let randomIdx;
+      do {
+        // Ensure random index is not the current index
+        randomIdx = Math.floor(Math.random() * playlist.length);
+      } while (songIndex === randomIdx);
+
+      if (shuffled) await goToSong(randomIdx);
     }
   }
 
@@ -77,6 +83,7 @@ function App(): JSX.Element {
           song={currentSong!}
           lyrics={lyrics!.lyrics}
           songIndex={songIndex}
+          goToSong={goToSong}
           playlistLength={playlist!.length}
           goPrev={goPrev}
           goNext={goNext}
