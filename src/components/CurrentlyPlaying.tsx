@@ -3,25 +3,9 @@ import SongTitle from "./SongTitle";
 import PlayControls from "./PlayControls";
 import VolumeControls from "./VolumeControls";
 import { JSX } from "react";
-import { PlaylistSong, Song } from "../types.ts";
+import { MasterProp } from "../types.ts";
 
-type Props = {
-  playlist: PlaylistSong[] | null;
-  song: Song | null;
-  lyrics?: string;
-  playbackSpeed: number;
-  setPlaybackSpeed: (speed: number) => void;
-  paused: boolean;
-  setPaused: (speed: boolean) => void;
-  shuffled: boolean;
-  setShuffled: (speed: boolean) => void;
-  goPrev: () => Promise<void>;
-  goNext: () => Promise<void>;
-  songIndex: number;
-  playlistLength: number;
-};
-
-export default function CurrentlyPlaying(props: Props): JSX.Element {
+export default function CurrentlyPlaying(props: MasterProp): JSX.Element {
   return (
     <div className="flex w-full flex-col p-6 md:w-[50%]">
       <CoverArt

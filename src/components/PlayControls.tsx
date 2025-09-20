@@ -3,17 +3,21 @@ import { JSX } from "react";
 
 type Props = {
   loading?: boolean;
-  playbackSpeed: number;
-  setPlaybackSpeed: (speed: number) => void;
-  paused: boolean;
-  setPaused: (speed: boolean) => void;
-  shuffled: boolean;
-  setShuffled: (speed: boolean) => void;
-  goPrev: () => Promise<void>;
-  goNext: () => Promise<void>;
-  songIndex: number;
-  playlistLength: number;
+  playbackSpeed?: number;
+  setPlaybackSpeed?: (speed: number) => void;
+  paused?: boolean;
+  setPaused?: (speed: boolean) => void;
+  shuffled?: boolean;
+  setShuffled?: (speed: boolean) => void;
+  goPrev?: () => Promise<void>;
+  goNext?: () => Promise<void>;
+  songIndex?: number;
+  playlistLength?: number;
 };
+// NOTE: Update ^ this ^ when updating MasterProp too. The difference here is
+//       that everything is optional, since the loading skeleton can't pass in
+//       any of these and none of them are needed when loading anyway. There
+//       might be a better way to do this but this is how I've done it for now.
 
 export default function PlayControls(props: Props): JSX.Element {
   const { playbackSpeed, setPlaybackSpeed } = props;
@@ -31,22 +35,22 @@ export default function PlayControls(props: Props): JSX.Element {
           onClick={() => {
             switch (playbackSpeed) {
               case 0.5:
-                setPlaybackSpeed(1);
+                setPlaybackSpeed!(1);
                 break;
 
               case 1:
-                setPlaybackSpeed(2);
+                setPlaybackSpeed!(2);
                 break;
 
               case 2:
-                setPlaybackSpeed(0.5);
+                setPlaybackSpeed!(0.5);
                 break;
 
               default:
                 console.warn(
                   `Unexpected playback speed ${playbackSpeed}. Setting to 1.`,
                 );
-                setPlaybackSpeed(1);
+                setPlaybackSpeed!(1);
                 break;
             }
           }}
@@ -75,7 +79,7 @@ export default function PlayControls(props: Props): JSX.Element {
           props.loading ? "opacity-50" : "cursor-pointer"
         }`}
         onClick={() => {
-          props.setPaused(!props.paused);
+          props.setPaused!(!props.paused);
         }}
       >
         {props.paused ? (
@@ -89,11 +93,11 @@ export default function PlayControls(props: Props): JSX.Element {
       <button
         disabled={
           props.loading ||
-          (!props.shuffled && props.songIndex >= props.playlistLength - 1)
+          (!props.shuffled && props.songIndex! >= props.playlistLength! - 1)
         }
         className={`flex h-10 w-10 items-center justify-center ${
           props.loading ||
-          (!props.shuffled && props.songIndex >= props.playlistLength - 1)
+          (!props.shuffled && props.songIndex! >= props.playlistLength! - 1)
             ? "cursor-default opacity-50"
             : "cursor-pointer"
         }`}
@@ -109,7 +113,7 @@ export default function PlayControls(props: Props): JSX.Element {
           props.loading ? "opacity-50" : "cursor-pointer"
         }`}
         onClick={() => {
-          props.setShuffled(!props.shuffled);
+          props.setShuffled!(!props.shuffled);
         }}
       >
         <Shuffle
