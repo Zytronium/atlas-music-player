@@ -29,32 +29,30 @@ export default function PlayControls(props: Props): JSX.Element {
         className={`flex h-10 w-10 items-center justify-center ${
           props.loading ? "opacity-50" : "cursor-pointer"
         }`}
+        onClick={() => {
+          switch (playbackSpeed) {
+            case 0.5:
+              setPlaybackSpeed!(1);
+              break;
+
+            case 1:
+              setPlaybackSpeed!(2);
+              break;
+
+            case 2:
+              setPlaybackSpeed!(0.5);
+              break;
+
+            default:
+              console.warn(
+                `Unexpected playback speed ${playbackSpeed}. Setting to 1.`,
+              );
+              setPlaybackSpeed!(1);
+              break;
+          }
+        }}
       >
-        <span
-          className="text-text dark:text-primary text-lg font-[500]"
-          onClick={() => {
-            switch (playbackSpeed) {
-              case 0.5:
-                setPlaybackSpeed!(1);
-                break;
-
-              case 1:
-                setPlaybackSpeed!(2);
-                break;
-
-              case 2:
-                setPlaybackSpeed!(0.5);
-                break;
-
-              default:
-                console.warn(
-                  `Unexpected playback speed ${playbackSpeed}. Setting to 1.`,
-                );
-                setPlaybackSpeed!(1);
-                break;
-            }
-          }}
-        >
+        <span className="text-text dark:text-primary text-lg font-[500]">
           {playbackSpeed}x
         </span>
       </button>

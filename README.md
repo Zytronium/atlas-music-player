@@ -48,12 +48,12 @@
 - [X] ​0. Getting Started (0/0 pts)
 - [X] ​1. Currently Playing (45/45 pts)
 - [X] ​2. Playlist (20/20 pts)
-- [ ] ​3. Audio Player (0/25 pts)
+- [ ] ​3. Audio Player (20/25 pts)
 - [ ] ​4. Deploy Application (0/10 pts)
 - [X] ​NaN. Of course there's a rickroll (0/0 pts)
 
 
-- [ ] **Project 2 Done ✓** (65/100 pts) - 65%
+- [ ] **Project 2 Done ✓** (85/100 pts) - 85%
 
 >### Progress Goals:
 ><strong>Thursday: 10% ✓(task 0)</strong>  

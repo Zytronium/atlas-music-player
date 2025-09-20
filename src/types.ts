@@ -21,8 +21,8 @@ export interface MasterProp {
   playlist: PlaylistSong[] | null;
   song: Song | null;
   lyrics?: string;
-  playbackSpeed: number;
-  setPlaybackSpeed: (s: number) => void;
+  playbackSpeed: 0.5 | 1.0 | 2.0;
+  setPlaybackSpeed: (s: 0.5 | 1.0 | 2.0) => void;
   volume: number;
   setVolume: (v: number) => void; // V.irtual
   paused: boolean;

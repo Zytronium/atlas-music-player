@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import MusicPlayer from "./MusicPlayer";
 import LoadingSkeleton from "./LoadingSkeleton";
+import AudioPlayer from "./AudioPlayer";
 import { PlaylistSong, Song, Lyrics } from "../types";
 import { fetchPlaylist, fetchSong, fetchLyrics } from "../api_helper";
 import { JSX, useEffect, useState } from "react";
@@ -11,7 +12,7 @@ function App(): JSX.Element {
   const [currentSong, setCurrentSong] = useState<Song | null>(null);
   const [songIndex, setSongIndex] = useState<number>(0);
   const [lyrics, setLyrics] = useState<Lyrics | null>(null);
-  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
+  const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 1.0 | 2.0>(1);
   const [paused, setPaused] = useState<boolean>(true);
   const [shuffled, setShuffled] = useState<boolean>(false);
   const [volume, setVolume] = useState<number>(0.5);
@@ -98,6 +99,13 @@ function App(): JSX.Element {
         />
       )}
       <Footer />
+      <AudioPlayer
+        source={currentSong?.song}
+        playbackSpeed={playbackSpeed}
+        playing={!paused}
+        volume={volume}
+        onEnded={() => goNext}
+      />
     </div>
   );
 }
