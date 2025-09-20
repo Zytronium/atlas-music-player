@@ -12,7 +12,7 @@ function App(): JSX.Element {
   const [songIndex, setSongIndex] = useState<number>(0);
   const [lyrics, setLyrics] = useState<Lyrics | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
-  const [paused, setPaused] = useState<boolean>(false);
+  const [paused, setPaused] = useState<boolean>(true);
   const [shuffled, setShuffled] = useState<boolean>(false);
 
   useEffect(() => {

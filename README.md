@@ -50,7 +50,7 @@
 - [ ] ​2. Playlist (0/20 pts)
 - [ ] ​3. Audio Player (0/25 pts)
 - [ ] ​4. Deploy Application (0/10 pts)
-- [ ] ​NaN. Of course there's a rickroll (0/0 pts)
+- [X] ​NaN. Of course there's a rickroll (0/0 pts)
 
 
 - [ ] **Project 2 Done ✓** (35/100 pts) - 35%
