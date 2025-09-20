@@ -6,6 +6,7 @@ type Props = {
   playing: boolean;
   volume: number;
   onEnded: () => void;
+  title: string | undefined;
 };
 
 export default function MusicPlayer(props: Props): JSX.Element {
@@ -33,16 +34,23 @@ export default function MusicPlayer(props: Props): JSX.Element {
     if (!ref.current) return;
     if (props.source != null) {
       ref.current.src = props.source;
+      if (props.playing) console.log(`Now playing: ${props.title}`);
     }
-  }, [props.source]);
+  }, [props.source, props.title]); // Intentionally not putting props.playing here because that causes a bug. This is a warning, not an error, so I'll leave this
 
   useEffect(() => {
     const current = ref.current;
+    if (!current) return;
+    requestAnimationFrame(() => {
+      current.playbackRate = props.playbackSpeed;
+    });
+  }, [props.playbackSpeed, props.source]);
 
-    current?.addEventListener("ended", () => props.onEnded);
-
+  useEffect(() => {
+    const current = ref.current;
+    current?.addEventListener("ended", props.onEnded);
     return () => {
-      current?.removeEventListener("ended", () => props.onEnded);
+      current?.removeEventListener("ended", props.onEnded);
     };
   }, [ref, props.onEnded]);
 

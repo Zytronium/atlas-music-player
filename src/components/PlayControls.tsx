@@ -4,7 +4,7 @@ import { JSX } from "react";
 type Props = {
   loading?: boolean;
   playbackSpeed?: number;
-  setPlaybackSpeed?: (speed: number) => void;
+  setPlaybackSpeed?: (speed: 0.5 | 1 | 2) => void;
   paused?: boolean;
   setPaused?: (speed: boolean) => void;
   shuffled?: boolean;

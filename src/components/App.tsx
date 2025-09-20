@@ -98,14 +98,19 @@ function App(): JSX.Element {
           setVolume={setVolume}
         />
       )}
-      <Footer />
       <AudioPlayer
         source={currentSong?.song}
         playbackSpeed={playbackSpeed}
         playing={!paused}
         volume={volume}
-        onEnded={() => goNext}
+        onEnded={() => {
+          if (!shuffled && songIndex! >= (playlist?.length ?? 0) - 1)
+            setPaused(true);
+          else goNext();
+        }}
+        title={currentSong?.title}
       />
+      <Footer />
     </div>
   );
 }
