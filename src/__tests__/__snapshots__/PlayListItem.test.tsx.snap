@@ -1,0 +1,197 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PlayListItem - NaN duration 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between  h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        Weird Duration
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        Edge Case
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      ??:??
+    </p>
+  </button>
+</div>
+`;
+
+exports[`PlayListItem - active explicitly false 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between  h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        Explicitly Inactive
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        Yet Another Artist
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      3:20
+    </p>
+  </button>
+</div>
+`;
+
+exports[`PlayListItem - active state applied 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between bg-tertiary h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        Active Track
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        Some Other Artist
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      3:20
+    </p>
+  </button>
+</div>
+`;
+
+exports[`PlayListItem - duration passed as MM:SS string displays as NaN 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between  h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        String Duration
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        Edge Case
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      ??:??
+    </p>
+  </button>
+</div>
+`;
+
+exports[`PlayListItem - long duration 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between  h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        Never gonna give you up
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        Rick Astley
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      60:01
+    </p>
+  </button>
+</div>
+`;
+
+exports[`PlayListItem - typical props (inactive) 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between  h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        Typical Track
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        Some Artist
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      2:05
+    </p>
+  </button>
+</div>
+`;
+
+exports[`PlayListItem - zero duration and short title 1`] = `
+<div>
+  <button
+    class="flex w-full flex-row items-center justify-between  h-10 cursor-pointer rounded-md px-1"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h2
+        class="text-sm font-[500] text-left"
+      >
+        Short
+      </h2>
+      <p
+        class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+      >
+        a
+      </p>
+    </div>
+    <p
+      class="text-muted dark:text-dark-muted text-sm font-[500]"
+    >
+      0:00
+    </p>
+  </button>
+</div>
+`;

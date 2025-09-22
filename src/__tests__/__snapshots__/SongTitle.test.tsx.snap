@@ -1,0 +1,92 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle - default/large styling (size omitted) 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <h2
+      class="text-line mb-2 text-2xl/8 font-bold text-left"
+    >
+      The Atlas
+    </h2>
+    <p
+      class="dark:text-dark-muted text-muted mb-4 text-left"
+    >
+      16 / 16 / 16
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle - empty title and artist (edge case) 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <h2
+      class="text-line mb-2 text-2xl/8 font-bold text-left"
+    />
+    <p
+      class="dark:text-dark-muted text-muted mb-4 text-left"
+    />
+  </div>
+</div>
+`;
+
+exports[`SongTitle - long title and artist (wrap/overflow cases) 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <h2
+      class="text-line mb-2 text-2xl/8 font-bold text-left"
+    >
+      This is an unusually long song title that is intended to test wrapping and layout behavior in the component that should certainly overflow unless your monitor or zoom level is simply absurdly, astronomically, nearly incomprehensible large as heck like seriously who hsa a screen this large I know I don't except maybe the Atlas School Main Stage display can display it all if you adjust the zoom level
+    </h2>
+    <p
+      class="dark:text-dark-muted text-muted mb-4 text-left"
+    >
+      A Very Long Artist Name That Should Overflow Or Wrap In Narrow Layouts Especially On Smaller Screens Like Mobile Phones
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle - small size styling 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <h2
+      class="text-sm font-[500] text-left"
+    >
+      Short Track
+    </h2>
+    <p
+      class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+    >
+      Some Artist
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle - unicode, emojis, and special characters 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <h2
+      class="text-sm font-[500] text-left"
+    >
+      🌌 星の旅 — Stårnë
+    </h2>
+    <p
+      class="dark:text-dark-muted text-muted text-sm font-[500] text-left"
+    >
+      Æther & Ωmega 🎵
+    </p>
+  </div>
+</div>
+`;
