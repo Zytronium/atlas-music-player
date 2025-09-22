@@ -18,7 +18,10 @@
 - `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatically be reflected in the browser
 - `npm run lint`: Run the lint checker with eslint to check for known linting issues
 - `npm run build`: Outputs the production files into the `dist` folder
-- `npm run test-dist`: Outputs the prod files into the `dist` folder AND runs an express server to preview it (since dev version can sometimes differ from the dist version)
+- `npm run dist-prev`: Outputs the prod files into the `dist` folder AND runs an express server to preview it (since dev version can sometimes differ from the dist version)  
+> Note: `npm run dist-prev` does the same thing as `npm run build; npm run preview` from what I can tell, so I will stop including this in my future projects.
+
+**View the website in production here: https://atlas-music-player.zytronium.dev/**
 
 ---
 
@@ -43,6 +46,8 @@
 <strong>Monday: 85% ✓(task 6)</strong>  
 <strong>Tuesday: 100% ✓(task 7)</strong>
 
+Completed: Tuesday, Sept 16
+
 
 ### Typescript Introduction
 - [X] ​0. Getting Started (0/0 pts)
@@ -60,5 +65,25 @@
 <strong>Friday: 45% (task 1)</strong>  
 <strong>Saturday/Sunday: 65% ✓(task 2)</strong>  
 <em style="color: gray">Monday: 100% ✓(task 4)</em>  
+
+Completed: Saturday, Sept 20
+
+
+### React Unit Testing
+- [ ] ​0. Getting Started (0/10 pts)  <small>Note: I don't use WebStorm instead of VS Code. I can't find a Vitest plugin for WebStorm</small>
+- [ ] ​1. Snapshot Tests (0/20 pts)
+- [ ] ​2. Mocking (0/20 pts)
+- [ ] ​3. React Testing Library (0/20 pts)
+- [ ] ​4. Code Coverage (0/20 pts)
+- [ ] ​5. Continuous Integration (0/10 pts)
+
+
+- [ ] **Project 3 Done ✓** (0/100 pts) - 0%
+
+>### Progress Goals:
+><strong>Monday: 50% (task 2)</strong>  
+<em style="color: gray">Tuesday: 100% (task 5)</em> 
+
+Completed: ` N/A `
 
 ---
