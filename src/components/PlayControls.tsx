@@ -17,7 +17,7 @@ type Props = {
 // NOTE: Update ^ this ^ when updating MasterProp too. The difference here is
 //       that everything is optional, since the loading skeleton can't pass in
 //       any of these and none of them are needed when loading anyway. There
-//       might be a better way to do this but this is how I've done it for now.
+//       might be a better way to do t    his but this is how I've done it for now.
 
 export default function PlayControls(props: Props): JSX.Element {
   const { playbackSpeed, setPlaybackSpeed } = props;
@@ -25,6 +25,7 @@ export default function PlayControls(props: Props): JSX.Element {
     <div className="mb-4 flex w-full flex-row items-center justify-between">
       {/* PLAYBACK SPEED */}
       <button
+        aria-label="speed"
         disabled={props.loading}
         className={`flex h-10 w-10 items-center justify-center ${
           props.loading ? "opacity-50" : "cursor-pointer"
@@ -59,6 +60,7 @@ export default function PlayControls(props: Props): JSX.Element {
 
       {/* PREV SONG */}
       <button
+        aria-label="previous"
         disabled={props.loading || props.songIndex === 0}
         className={`flex h-10 w-10 items-center justify-center ${
           props.loading || props.songIndex === 0
@@ -72,6 +74,7 @@ export default function PlayControls(props: Props): JSX.Element {
 
       {/* PAUSE / PLAY */}
       <button
+        aria-label={props.paused ? "play" : "pause"}
         disabled={props.loading}
         className={`outline-text dark:outline-primary bg-background-2 dark:bg-dark-background-2 flex h-12 w-12 items-center justify-center rounded-md outline-3 ${
           props.loading ? "opacity-50" : "cursor-pointer"
@@ -89,6 +92,7 @@ export default function PlayControls(props: Props): JSX.Element {
 
       {/* NEXT SONG */}
       <button
+        aria-label="next"
         disabled={
           props.loading ||
           (!props.shuffled && props.songIndex! >= props.playlistLength! - 1)
@@ -106,6 +110,7 @@ export default function PlayControls(props: Props): JSX.Element {
 
       {/* SHUFFLE */}
       <button
+        aria-label="shuffle"
         disabled={props.loading}
         className={`text-text dark:text-primary flex h-10 w-10 items-center justify-center ${
           props.loading ? "opacity-50" : "cursor-pointer"

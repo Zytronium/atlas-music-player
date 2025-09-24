@@ -4,20 +4,9 @@ import CoverArt from "../components/CoverArt";
 import { afterAll, afterEach, beforeAll } from "vitest";
 import { server } from "./mocks";
 
-// Start server before all tests run
-beforeAll(() => {
-  server.listen();
-});
-
-// Reset between tests to guarantee test always start in the same state
-afterEach(() => {
-  server.resetHandlers();
-});
-
-// Shutdown at the end of tests
-afterAll(() => {
-  server.close();
-});
+beforeAll(() => server.listen());
+afterEach(() => server.resetHandlers());
+afterAll(() => server.close());
 
 test("CoverArt renders with provided src and alt text", () => {
   const { container } = render(

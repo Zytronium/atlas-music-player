@@ -73,12 +73,12 @@ Completed: Saturday, Sept 20
 - [X] ​0. Getting Started (10/10 pts)  <small>Note: I don't use WebStorm instead of VS Code. I can't find a Vitest plugin for WebStorm</small>
 - [X] ​1. Snapshot Tests (20/20 pts)
 - [X] ​2. Mocking (20/20 pts)
-- [ ] ​3. React Testing Library (0/20 pts)
-- [ ] ​4. Code Coverage (0/20 pts)
+- [X] ​3. React Testing Library (20/20 pts)
+- [X] ​4. Code Coverage (20/20 pts)
 - [ ] ​5. Continuous Integration (0/10 pts)
 
 
-- [ ] **Project 3 Done ✓** (50/100 pts) - 50%
+- [ ] **Project 3 Done ✓** (90/100 pts) - 90%
 
 >### Progress Goals:
 ><strong>Monday: 50% (task 2)</strong>  
