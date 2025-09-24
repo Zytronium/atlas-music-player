@@ -72,17 +72,17 @@ Completed: Saturday, Sept 20
 ### React Unit Testing
 - [X] ​0. Getting Started (10/10 pts)  <small>Note: I don't use WebStorm instead of VS Code. I can't find a Vitest plugin for WebStorm</small>
 - [X] ​1. Snapshot Tests (20/20 pts)
-- [ ] ​2. Mocking (3/20 pts)
+- [X] ​2. Mocking (20/20 pts)
 - [ ] ​3. React Testing Library (0/20 pts)
 - [ ] ​4. Code Coverage (0/20 pts)
 - [ ] ​5. Continuous Integration (0/10 pts)
 
 
-- [ ] **Project 3 Done ✓** (33/100 pts) - 33%
+- [ ] **Project 3 Done ✓** (50/100 pts) - 50%
 
 >### Progress Goals:
 ><strong>Monday: 50% (task 2)</strong>  
-<em style="color: gray">Tuesday: 100% (task 5)</em> 
+<strong>Tuesday: 100% (task 5)</strong> 
 
 Completed: ` N/A `
 

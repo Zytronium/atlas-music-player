@@ -1,6 +1,23 @@
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
 import VolumeControls from "../components/VolumeControls";
+import { afterAll, afterEach, beforeAll } from "vitest";
+import { server } from "./mocks";
+
+// Start server before all tests run
+beforeAll(() => {
+  server.listen();
+});
+
+// Reset between tests to guarantee test always start in the same state
+afterEach(() => {
+  server.resetHandlers();
+});
+
+// Shutdown at the end of tests
+afterAll(() => {
+  server.close();
+});
 
 test("VolumeControls - default (no props)", () => {
   const { container } = render(<VolumeControls />);
