@@ -75,15 +75,15 @@ Completed: Saturday, Sept 20
 - [X] ​2. Mocking (20/20 pts)
 - [X] ​3. React Testing Library (20/20 pts)
 - [X] ​4. Code Coverage (20/20 pts)
-- [ ] ​5. Continuous Integration (10/10 pts)
+- [X] ​5. Continuous Integration (10/10 pts)
 
 
-- [ ] **Project 3 Done ✓** (100?/100 pts) - 100?%
+- [X] **Project 3 Done ✓** (100/100 pts) - 100%
 
 >### Progress Goals:
 ><strong>Monday: 50% (task 2)</strong>  
 <strong>Tuesday: 100% (task 5)</strong> 
 
-Completed: ` N/A `
+Completed: Wednesday, Sept 24
 
 ---
