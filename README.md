@@ -1,4 +1,5 @@
 # Atlas Music Player
+[![Continuous Integration](https://github.com/Zytronium/atlas-music-player/actions/workflows/ci.yml/badge.svg)](https://github.com/Zytronium/atlas-music-player/actions/workflows/ci.yml)
 
 ## Getting Started
 
@@ -75,7 +76,7 @@ Completed: Saturday, Sept 20
 - [X] ​2. Mocking (20/20 pts)
 - [X] ​3. React Testing Library (20/20 pts)
 - [X] ​4. Code Coverage (20/20 pts)
-- [X] ​5. Continuous Integration (10/10 pts)
+- [X] ​5. [![Continuous Integration](https://github.com/Zytronium/atlas-music-player/actions/workflows/ci.yml/badge.svg)](https://github.com/Zytronium/atlas-music-player/actions/workflows/ci.yml) (10/10 pts)
 
 
 - [X] **Project 3 Done ✓** (100/100 pts) - 100%
@@ -87,3 +88,5 @@ Completed: Saturday, Sept 20
 Completed: Wednesday, Sept 24
 
 ---
+
+
